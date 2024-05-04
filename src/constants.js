@@ -6,3 +6,5 @@ export const userList = [
         age: "27"
     }
 ]
+
+export const API_KEY = "Hg23WR03gCzzdcOHphhwdA==qtXpSLaR88zzUzSK"
