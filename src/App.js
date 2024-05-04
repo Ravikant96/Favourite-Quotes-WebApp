@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './Components/Login';
-import Header from './Components/Header'
+import Main from './Components/Main';
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 	
 	return (
 		<div className="App">
-			{user.data.name ? <Login /> : <Header />}
+			{user.data.name ? <Login /> : <Main />}
 		</div>
 	);
 }

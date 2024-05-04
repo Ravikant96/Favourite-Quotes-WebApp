@@ -1,8 +1,10 @@
 import { all } from 'redux-saga/effects';
 import { login } from './login';
+import { qoutes } from './qoutes';
 
 const sagaObject = [
-    login()
+    login(),
+    qoutes()
 ]
 
 const combinedSaga = [...sagaObject];

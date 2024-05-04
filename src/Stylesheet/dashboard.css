@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 70px);
+    position: relative;
+}
+.fav_container {
+    position: absolute;
+    right: 0;
+}
