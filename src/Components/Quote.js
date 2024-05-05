@@ -18,6 +18,10 @@ const Quote = (props) => {
 
     const handleFavList = () => {
         
+        if(favClass.includes("fav_button_active")) {
+            return;
+        }
+
         setFavList(data => [...data, {
             quote,author
         }]);
