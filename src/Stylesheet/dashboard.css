@@ -2,13 +2,14 @@
     box-sizing: border-box;
 }
 .dashboard {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
     width: 100%;
     height: calc(100% - 70px);
     position: relative;
-}
-.fav_container {
-    position: absolute;
-    right: 0;
+    grid-template-columns: 1fr 30%;
+    background-image: url("../assets/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

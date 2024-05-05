@@ -1,7 +1,7 @@
 .quotes {
     display: grid;
     grid-auto-flow: column;
-    width: 85%;
+    width: 100%;
     height: 400px;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,7 @@
     transition: zoom 300ms color 300ms;
 }
 .fav_button.fav_button_active {
-    color: red !important;
+    color: #f45e7b !important;
     zoom: 1.2;
 }
 .editable_area {

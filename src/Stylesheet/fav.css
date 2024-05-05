@@ -1,0 +1,54 @@
+.fav_container {
+    height: 100%;
+    overflow: auto;
+    background: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.fav_container .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    background: #f9ffea;
+    font-weight: bold;
+    box-shadow: 0 0px 10px 3px rgba(0, 0, 0, .3);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.fav_container .fav_list {
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.fav_container .fav_qoute {
+
+    background-image: linear-gradient(to right, #d5ebf2, #fff);
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, .3);
+}
+.fav_container .fav_qoute .f_qoute_c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.f_qoute {
+    font-weight: bold;
+    opacity: .7;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.f_author {
+    margin-left: auto;
+    font-weight: bold;
+    opacity: .5;
+}
+.control_button > button {
+    color: #f45e7b;
+}
