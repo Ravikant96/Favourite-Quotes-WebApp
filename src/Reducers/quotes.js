@@ -1,7 +1,7 @@
 import { FETCH_QUOTES_FAILURE, FETCH_QUOTES_SUCCESS, START_API_CALL } from "../Types/quotes";
 
 const initial_state = {
-    loading: false,
+    loading: true,
     data: [],
     error: ""
 }
@@ -26,7 +26,7 @@ const quotesReducer = (state = initial_state, action) => {
                 ...state,
                 loading: false,
                 error: action.payload,
-                data: {}
+                data: []
             }
         }
 
