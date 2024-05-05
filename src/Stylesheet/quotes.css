@@ -2,30 +2,29 @@
     display: grid;
     grid-auto-flow: column;
     width: 85%;
-    height: 100%;
+    height: 400px;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 5% 1fr 5% 5% 5%;
+    grid-template-columns: max-content 1fr max-content 15%;
     padding: 30px;
+    position: relative;
 }
 .quote_container {
     display: flex;
     position: relative;
+    height: max-content;
+    width: 100%;
 }
 .quote_icon {
-    height: 100%;
+    height: max-content;
     display: flex;
-    align-items: center;
     width: 100%;
 }
 .quote_icon > svg {
     font-size: 60px;
 }
-.quote_icon.top > svg {
-    margin-top: -50px;
-}
-.quote_icon.bottom > svg {
-    margin-top: 120px;
+.quote_icon.bottom {
+    margin-top: auto;
 }
 .quote_button {
     width: max-content;
@@ -66,4 +65,44 @@
     margin-left: auto;
     display: flex;
     font-weight: bold;
+}
+.fav_button {
+    color: #ffa5a5 !important;
+    zoom: 1;
+    transition: zoom 300ms color 300ms;
+}
+.fav_button.fav_button_active {
+    color: red !important;
+    zoom: 1.2;
+}
+.editable_area {
+    /* display: flex;
+    flex-direction: column; */
+}
+.editable_area > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.editable_area > label.author_label > span {
+    margin-left: auto;
+}
+.editable_area > label > span {
+    margin-right: 5px;
+}
+.edit_text_area {
+    width: 100%;
+    height: 20%;
+}
+.quote_container .loader {
+    margin: auto;
+}
+.quote_button_continer {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: -80px;
+}
+.quote_button_continer > button {
+    margin-right: 20px;
 }
