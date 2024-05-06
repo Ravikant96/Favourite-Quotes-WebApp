@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import Quote from "./Quote";
 import { Button } from "@mui/material";
 import CircularProgress from '@mui/material/CircularProgress';
@@ -23,6 +23,7 @@ const Quotes = (props) => {
     const showQuotes = () => {
         dispatch(fetchQoutes())
     }
+
     return (
         <div className="quotes">
             <div className="quote_icon top">
