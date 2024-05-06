@@ -18,3 +18,7 @@ A small web application that allows users to interact with inspirational quotes.
 
 # Contributing
   Feel free to contribute to this project. Fork the repository and submit a pull request with your changes
+
+# Credentials
+  email: abc@mail.com
+  password: 123
