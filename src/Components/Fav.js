@@ -1,13 +1,15 @@
-// const { favList, setFavList } = props;
-import * as React from 'react';
+import React, { useState } from 'react';
 import FavQuote from './FavQoute';
+import Badge from '@mui/material/Badge';
 import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
 
 import "../Stylesheet/fav.css"
+import { Button } from '@mui/base';
 
 const FavContainer = (props) => {
 
     const {favList, setFavList} = props;
+    const [toggleSlide, setToggleClass] = useState(false);
     const handleUnFavChange = (data) => {
         
         const quote = data.quote;
@@ -23,12 +25,16 @@ const FavContainer = (props) => {
 
         setFavList(new_list);
     }
+
+    const handleSlide = () => {
+        setToggleClass(!toggleSlide);
+    }
+
     return (
-        <div className='fav_container'>
-            <div className='header'>
-                <StarBorderPurple500Icon />
-                <span className='text'>Favrouite List</span>
-            </div>
+        <div className={toggleSlide ? "fav_container transit" : "fav_container"}>
+            <Badge badgeContent={favList.length} color="primary" className='fav_button_container' >
+                <Button onClick={handleSlide}><StarBorderPurple500Icon /></Button>
+            </Badge>
             <div className='fav_list'>
                 {favList.map(x => <FavQuote data={x} key={x.quote} handleUnFavChange={handleUnFavChange} />)}
             </div>

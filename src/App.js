@@ -10,7 +10,7 @@ function App() {
 	
 	return (
 		<div className="App">
-			{!user.data.name ? <Login /> : <Main />}
+			{user.data.name ? <Login /> : <Main />}
 		</div>
 	);
 }

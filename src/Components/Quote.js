@@ -3,7 +3,7 @@ import {Box, Button} from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import EditIcon from '@mui/icons-material/Edit';
 import Textarea from '@mui/joy/Textarea';
-
+import { toaster } from './Toaster';
 
 const Quote = (props) => {
 
@@ -25,6 +25,7 @@ const Quote = (props) => {
         setFavList(data => [...data, {
             quote,author
         }]);
+        toaster('success', 'Quote marked as Favourite.', 3000);
         setFavClass("fav_button fav_button_active")
     }
 
@@ -44,6 +45,7 @@ const Quote = (props) => {
 
     const handleSave = (e) => {
         setEditMode(false);
+        toaster('success', 'Quote Updated.', 3000);
         setEditClass("editable_area hidden");
     }
 
