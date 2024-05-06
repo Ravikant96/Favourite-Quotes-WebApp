@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+.dashboard {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: calc(100% - 64px);
+    position: relative;
+    grid-template-columns: 1fr;
+    background-image: url("../assets/back2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

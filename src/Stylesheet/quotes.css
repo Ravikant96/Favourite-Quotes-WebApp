@@ -1,0 +1,127 @@
+.quotes {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: max-content 1fr max-content 15%;
+    padding: 30px;
+    position: relative;
+}
+.quote_container {
+    display: flex;
+    position: relative;
+    height: max-content;
+    width: 100%;
+}
+.quote_icon {
+    height: max-content;
+    display: flex;
+    width: 100%;
+}
+.quote_icon > svg {
+    font-size: 60px;
+}
+.quote_icon.bottom {
+    margin-top: auto;
+}
+.quote_button {
+    width: max-content;
+    padding: 5px 12px !important;
+    border-radius: 50% !important;
+    border: 1px solid #2196f3 !important;
+    margin-top: auto !important;
+    background-color: #e3f2fd !important;
+    color: #2196f3 !important;
+    height: 60px;
+    zoom: .7;
+}
+.quote {
+    position: absolute; 
+    top: 0;
+    display: grid !important;
+    width: 100%;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 10%;
+    animation: fadeInFromNone 1s ease-out;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+.hidden {
+    display: none !important;
+}
+.q_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.q_quote {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 5px
+}
+.q-author {
+    margin-top: 5px;
+    margin-left: auto;
+    display: flex;
+    font-weight: bold;
+}
+.fav_button {
+    color: #ffa5a5 !important;
+    zoom: 1;
+    transition: zoom 300ms color 300ms;
+}
+.fav_button.fav_button_active {
+    color: #f45e7b !important;
+    zoom: 1.2;
+}
+.editable_area {
+    /* display: flex;
+    flex-direction: column; */
+}
+.editable_area > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.editable_area > label.author_label > span {
+    margin-left: auto;
+}
+.editable_area > label > span {
+    margin-right: 5px;
+}
+.edit_text_area {
+    width: 100%;
+    height: 20%;
+}
+.quote_container .loader {
+    margin: auto;
+    margin-bottom: -100px;
+}
+.quote_button_continer {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: -80px;
+}
+.quote_button_continer > button {
+    margin-right: 20px;
+}
